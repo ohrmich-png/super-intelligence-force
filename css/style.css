@@ -5,10 +5,11 @@
   --panel-border: #223052;
   --text: #e8edf5;
   --muted: #93a1b8;
-  --accent: #22d3ee;
-  --accent-dim: rgba(34, 211, 238, .12);
+  --accent: #c2513f;
+  --accent-dim: rgba(194, 81, 63, .12);
   --gold: #fbbf24;
   --radius: 14px;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -40,7 +41,7 @@ body {
 .brand-badge {
   display: inline-flex; align-items: center; justify-content: center;
   width: 30px; height: 30px; border-radius: 8px;
-  background: linear-gradient(135deg, var(--accent), #818cf8);
+  background: linear-gradient(135deg, var(--accent), #8f3a2e);
   color: #06121a; font-size: 13px; font-weight: 900;
 }
 .nav-links { display: flex; gap: 18px; margin-left: 8px; }
@@ -49,7 +50,7 @@ body {
 .nav-count {
   margin-left: auto; font-variant-numeric: tabular-nums;
   font-size: 13px; font-weight: 700; color: var(--accent);
-  background: var(--accent-dim); border: 1px solid rgba(34,211,238,.35);
+  background: var(--accent-dim); border: 1px solid rgba(194,81,63,.35);
   padding: 6px 12px; border-radius: 999px; white-space: nowrap;
 }
 
@@ -57,13 +58,13 @@ body {
 .hero {
   padding: 84px 0 72px;
   background:
-    radial-gradient(900px 420px at 20% 0%, rgba(34,211,238,.10), transparent 60%),
-    radial-gradient(700px 380px at 85% 20%, rgba(129,140,248,.10), transparent 60%);
+    radial-gradient(900px 420px at 20% 0%, rgba(194,81,63,.10), transparent 60%),
+    radial-gradient(700px 380px at 85% 20%, rgba(143,58,46,.10), transparent 60%);
   border-bottom: 1px solid var(--panel-border);
 }
 .hero-inner { max-width: 980px; margin: 0 auto; padding: 0 20px; }
 .eyebrow { color: var(--accent); font-size: 13px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 18px; }
-.hero h1 { font-size: clamp(44px, 7vw, 84px); line-height: 1.02; letter-spacing: -.02em; font-weight: 900; margin-bottom: 20px; }
+.hero h1 { font-family: var(--serif); font-size: clamp(44px, 7vw, 84px); line-height: 1.04; letter-spacing: -.01em; font-weight: 700; margin-bottom: 20px; }
 .deck { font-size: 18px; color: var(--muted); max-width: 700px; margin-bottom: 34px; }
 
 .count-label { font-size: 14px; color: var(--muted); margin-bottom: 12px; }
@@ -90,16 +91,16 @@ body {
 .section { padding: 72px 0; }
 .section.alt { background: var(--bg-alt); border-top: 1px solid var(--panel-border); border-bottom: 1px solid var(--panel-border); }
 .kicker { color: var(--accent); font-size: 13px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 10px; }
-.section h2 { font-size: clamp(28px, 4vw, 40px); letter-spacing: -.01em; margin-bottom: 22px; font-weight: 800; }
+.section h2 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); letter-spacing: -.01em; margin-bottom: 22px; font-weight: 700; }
 .section-note { color: var(--muted); margin: -12px 0 26px; font-size: 15px; }
-.subhead { font-size: 22px; margin: 40px 0 18px; font-weight: 800; }
+.subhead { font-family: var(--serif); font-size: 24px; margin: 40px 0 18px; font-weight: 700; }
 
 .prose { max-width: 760px; }
 .prose p { margin-bottom: 16px; color: #c9d3e3; }
 .prose strong { color: var(--text); }
 .prose blockquote {
   border-left: 3px solid var(--accent); padding: 6px 0 6px 20px; margin: 24px 0;
-  font-size: 18px; font-style: italic; color: var(--text);
+  font-family: var(--serif); font-size: 20px; font-style: italic; color: var(--text);
 }
 .prose blockquote cite { display: block; margin-top: 8px; font-size: 14px; font-style: normal; color: var(--muted); }
 
